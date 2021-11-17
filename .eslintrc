@@ -1,0 +1,16 @@
+{
+  "parser": "babel-eslint", // uses babel-eslint transforms
+  "settings": {
+    "react": {
+      "version": "detect" // detect react version
+    }
+  },
+  "env": {
+    "node": true,
+    "browser": true
+  },
+  "extends": [
+    "eslint:recommended", // use recommended configs
+    "plugin:react/recommended"
+  ]
+}
