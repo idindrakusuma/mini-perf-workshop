@@ -18,6 +18,7 @@
     "@chakra-ui/react": "^1.6.3",
     "@emotion/react": "^11.4.0",
     "@emotion/styled": "^11.3.0",
+    "@jackyef/use-intersect": "^0.0.6",
     "@loadable/component": "^5.15.0",
     "dayjs": "^1.10.5",
     "framer-motion": "^4",

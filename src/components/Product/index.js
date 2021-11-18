@@ -7,7 +7,14 @@ import StartLogo from '../../assets/start.svg';
 function Product({ imageUrl, name, price, rating }) {
   return (
     <Box boxShadow="md" borderRadius="16px">
-      <Image src={imageUrl} height="150px" width="100%" objectFit="cover" objectPosition="center" borderRadius="16px 16px 0 0" />
+      <Image
+        src={imageUrl}
+        maxHeight="100px"
+        width="100%"
+        objectFit="cover"
+        objectPosition="center"
+        borderRadius="16px 16px 0 0"
+      />
       <Box padding="16px 8px">
         <Text>{name}</Text>
         <Text color="red.800">{price}</Text>
