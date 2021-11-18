@@ -9,7 +9,7 @@ function Product({ imageUrl, name, price, rating }) {
     <Box boxShadow="md" borderRadius="16px">
       <Image
         src={imageUrl}
-        maxHeight="100px"
+        height="100px"
         width="100%"
         objectFit="cover"
         objectPosition="center"
