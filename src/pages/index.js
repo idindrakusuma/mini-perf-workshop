@@ -2,7 +2,7 @@ import React from 'react';
 import { Box, SimpleGrid } from '@chakra-ui/react';
 
 import Header from '../components/Header';
-import Footer from '../components/Footer';
+import Footer from '../components/Footer/Lazy';
 import Product from '../components/Product';
 import Layout from '../components/Layout';
 
