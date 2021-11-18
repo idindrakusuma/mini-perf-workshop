@@ -3,11 +3,12 @@ import { string } from 'prop-types';
 import { Box, Image, Text } from '@chakra-ui/react';
 
 import StartLogo from '../../assets/start.svg';
+import LazyImage from './LazyImage';
 
 function Product({ imageUrl, name, price, rating }) {
   return (
     <Box boxShadow="md" borderRadius="16px">
-      <Image
+      <LazyImage
         src={imageUrl}
         height="100px"
         width="100%"
