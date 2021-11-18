@@ -2,31 +2,6 @@ import React from 'react';
 import { Box, Text } from '@chakra-ui/react';
 
 function Footer() {
-  const disqusInit = React.useRef(false);
-
-  React.useEffect(() => {
-    if (disqusInit.current) return;
-
-    const initDisqus = () => {
-      var d = document,
-        s = d.createElement('script'),
-        count = d.createElement('script');
-      s.src = 'https://test-disqus-13.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-
-      count.src = 'https://test-disqus-13.disqus.com/count.js';
-      count.async = true;
-      count.setAttribute('id', 'dsq-count-scr');
-
-      (d.head || d.body).appendChild(s);
-      (d.head || d.body).appendChild(count);
-
-      disqusInit.current = true;
-    };
-
-    initDisqus();
-  }, []);
-
   return (
     <Box padding="32px">
       <Text fontWeight="bold" align="center">
@@ -50,9 +25,6 @@ function Footer() {
         serta dapat meningkatkan kepercayaan pembeli. Ayo mulai jualan online di Tokopedia dan mulai
         kembangkan usahamu secara online bersama Tokopedia.
       </Text>
-      <Box padding="24px" bgColor="blackAlpha.700" marginTop="32px">
-        <div id="disqus_thread" />
-      </Box>
     </Box>
   );
 }
